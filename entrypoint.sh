@@ -2,6 +2,7 @@
 
 set -e
 
-version=$(cat package.json | grep version | awk -F \" '{print $4}')
+version=$(grep version package.json | awk -F \" '{print $4}')
 
+echo version: $version
 echo ::set-output name=version::$version
