@@ -1,5 +1,8 @@
-name: Package version
+name: Read package version
 description: Reads the npm version from package.json file
+branding:
+  icon: book-open
+  color: yellow
 runs:
   using: docker
   image: Dockerfile
